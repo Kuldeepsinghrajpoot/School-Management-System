@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+{
+	box-sizing: border-box;	
+	margin: 0;
+	padding: 100px;
+	font-family: 'Lora', serif;
+}
+
+body{
+	
+	font-family: 'Lora', serif;
+}
+  #table,tr,td{
+          
+           border-collapse: collapse;
+           border-top: none;
+           border-bottom: none;
+           
+	  border:1px solid #BEBEBE;
+}
+        }
+            th, td {
+            padding: 3PX 5px;
+        }
+                th {
+           text-align: center;
+        }
+        
+ #table{	
+ text-align: center;
+ height: 5rem;
+        }
+
+#table2{	
+ border: 1px solid black;
+     font-size:17px;
+        }
+#table2,#td{
+	border-style: none;
+	padding: 2px 5px;
+	margin: 0;
+	font-size: 17px;
+}
+.STATUS{
+	border-style: solid;
+	border: 5px solid red;
+	font-weight: bold;
+	border-radius:5px;
+	font-size: 25px;
+	width: 300px;
+	text-align: center;
+}
+ #img1{
+   opacity: 0.20;
+   height: 370px;
+   width: 350px;
+   position: absolute;
+   margin: -100px -170px;
+}
+#img{
+	text-shadow: 3px 3px 3px #BEBEBE;
+    opacity: 0.20;
+    height: 370px;
+    width: 350px;
+    position: absolute;
+    margin: -5px -60px;
+    text-align: center;
+}
+fieldset{
+	  border:1px solid #BEBEBE;
+}
+#fieldset{
+	padding: -100px 10px;
+	font-size: 30px;
+	text-shadow: 3px 3px 3px #BEBEBE;
+	text-align: center;
+}
+#fieldset #img{
+	font-size: 30px;
+	width: 50px;
+	height: 50px;
+	border: 10px;
+	padding: -70px 60px;
+	opacity: 1;
+}
+#fieldset #img{
+	font-size: 30px;
+	width: 50px;
+	height: 50px;
+	border: 10px;
+	padding: -70px 60px;
+	opacity: 1;
+}
+#contains #tablePhoto{
+	font-size: 30px;
+	width: 50px;
+	height: 50px;
+	border: 10px;
+	padding: -70px 60px;
+	opacity: 1;
+	position: absolute;
+}
+#Photo{
+   font-size: 30px;
+	width: 100px;
+	height: 100px;
+	border: 10px;
+	margin: 0px 270px;
+	position: absolute;
+	opacity: 1;
+  
+}
+    #tablePhoto #Photo{
+	font-size: 30px;
+	width: 50px;
+	height: 50px;
+	border: 10px;
+	padding: -70px 60px;
+	opacity: 1;
+}
+ button{
+ 	background-image: url("printer.png.jpg");
+	width : 40px;
+	height: 40px;
+	border-style: none;
+	text-align: center;
+	cursor: pointer;
+	/*background-color: white;*/
+	 background-size: 400px 100px;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 20px;
+	color: black;
+	 background-size: cover;
+	transform: translate(0rem,0);
+	outline: none;
+	margin: 0;
+	padding: 0;
+	background-repeat: no-repeat;
+
+}
+ 

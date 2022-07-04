@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">
+	<style type="text/css">
+		body{
+	
+	font-family: 'Lora', serif;
+}
+#div{
+	font-family: 'Lora', serif;
+	font-size: 13px;
+}
+table, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
+	</style>
+
+
+
+</head>
+<body>
+
+</body>
+
+<?php
+header("Pragma: no-cache");
+header("Cache-Control: no-cache");
+header("Expires: 0");
+
+// following files need to be included
+require_once("./lib/config_paytm.php");
+require_once("./lib/encdec_paytm.php");
+
+$paytmChecksum = "";
+$paramList = array();
+$isValidChecksum = "FALSE";
+
+$paramList = $_POST;
+
+
+$paytmChecksum = isset($_POST["CHECKSUMHASH"]) ? $_POST["CHECKSUMHASH"] : ""; //Sent by Paytm pg
+
+//Verify all parameters received from Paytm pg to your application. Like MID received from paytm pg is same as your application’s MID, TXN_AMOUNT and ORDER_ID are same as what was sent by you to Paytm PG for initiating transaction etc.
+$isValidChecksum = verifychecksum_e($paramList, "EHWyhL5g8HCMU9af", $paytmChecksum); //will return TRUE or FALSE string.
+
+
+if($isValidChecksum == "TRUE") {
+	echo "<div id='table'>Checksum matched and following are the transaction details:</div>";
+	if ($_POST["STATUS"] == "TXN_SUCCESS") {
+		echo "<div id='table'>Transaction status is success</div>" . "<br/>";
+		//Process your transaction here as success transaction.
+		//Verify amount & order id received from Payment gateway with your application's order id and amount.
+	}
+	else {
+		echo "<div id='table'>Transaction status is failure</div>" . "<br/>";
+	}
+
+	if (isset($_POST) && count($_POST)>0 )
+	{ 
+		 echo "<div id='div'></div>";
+		?>
+		 <table>
+		 			  
+			   	<tr>
+              <td>ORDERID</td>
+              <td><?php echo $_POST['ORDERID']?></td>
+              </tr>
+              <tr>
+              <td>TXNID</td>
+              <td><?php echo $_POST['TXNID']?></td>
+              </tr>
+              <tr>
+              <td>TXNAMOUNT</td>
+              <td><?php echo $_POST['TXNAMOUNT']?></td>
+              </tr>
+              <tr>
+              <td>PAYMENTMODE</td>
+              <td><?php echo $_POST['PAYMENTMODE']?></td>
+              </tr>
+              <tr>
+              <td>CURRENCY</td>
+              <td><?php echo $_POST['CURRENCY']?></td>
+              </tr>
+              <tr>
+              <td>TXNDATE</td>
+              <td><?php echo $_POST['TXNDATE']?></td>
+              </tr>
+              <tr>
+              <td>STATUS</td>
+              <td><?php echo $_POST['STATUS']?></td>
+              </tr>
+               <tr>
+              <td>STATUS</td>
+              <td><?php echo $_POST['MSISDN']?></td>
+              </tr>
+			   </table>
+			   
+				<?php
+		
+	}
+	
+
+}
+else {
+	echo "<b>Checksum mismatched.</b>";
+	//Process transaction as suspicious.
+}
+
+?>
+</html>

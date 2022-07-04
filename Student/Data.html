@@ -1,0 +1,104 @@
+<html>
+<head>
+	<title>Informations</title>
+  <link rel="stylesheet" type="text/css" href="style4.css">
+	
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">
+  <script>
+    function submitData(){
+          var regestation = document.getElementById('dob').value;
+          //alert(regestation);
+        /*  document.getElementById('h1').innerHTML =regestation;*/
+    }
+  </script>
+</head>
+<body>
+
+		    <div class="contain">
+          <center class="header">
+          <form class="form">
+            <fieldset>
+              <legend>Inforamtions</legend>
+              <table class="control">
+       <tr>
+         <TD><label> Regestation Number</label></TD>
+         <td>
+              <input type="Number" name="Regestation"  id="reg">
+          </td>
+        </TD>
+         <td>  <label> Roll number</label></td>
+          <td>  <input type="text" name="Roll number"></td>
+       </tr>
+       <tr>
+         <td><label>  Father's name</label></td>
+             <td> <input type="text" name="fatherName"  id="fname"></td>
+         <td><label>  Mother's name</label></td>
+             <td> <input type="text" name="motherName" id="mname">
+</td>
+    </tr>
+
+<tr><td>
+            Gender:</td><td>
+                      <select   name="Gender">
+                        <option value="select">Select</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                      </select></td>
+           <td> Catagory:</td><td>
+                      <select name="Catagory">
+                        <option value="select">Select</option>
+                        <option value="OBC">OBC</option>
+                        <option value="GEN">GEN</option>
+                        <option value="SC">SC</option>
+                        <option value="ST">ST</option>
+                      </select></td></tr>
+            
+          <tr> <td> <label>DOB</label></td>
+               <td><input type="date" name="dob" id="dob"></td></tr>
+
+           <!-- <tr><td> <label> Contact Informations</label></td></tr> -->
+           
+           </table>
+           </fieldset>
+<fieldset>
+  <legend>Address Details</legend>
+           <table class="form">
+          <tr><td>City/Village</td><td><input type="text" name="cv"> </td>
+            <td>Dist</td><td><input type="text" name="Dist"> </td>
+
+          </tr>
+            <tr><Td>Temprary Address</Td><td>
+            <textarea rows="1" cols="40"></textarea></TD>
+            <td>PIN</td><td><input type="number" name="pin"> </td></tr>
+
+            <tr><Td> Permanet Address</Td><td>
+            <textarea rows="1" cols="40"></textarea></TD>
+            <td>POST</td><td><input type="number" name="posts"> </td></tr>
+
+</table>
+</fieldset>
+<fieldset>
+<table class="form">
+  <legend>Contacts Information</legend>
+  <tr>
+            <td><label>Phone number </label></td><td><input type="number" name="Contactumber"> </td>
+             <td><label>Parent's phone number </label></td><td>  <input type="number" name="Contact" id="Contact"></td></tr>
+             <tr><td><label>Email Id </label></td><td><input type="email" name="email"></td></tr>
+</table class="form">
+</fieldset>
+   <fieldset>
+    <legend>photo and Signature</legend>
+<table>
+ 
+  <tr><td>Photo</td><td><input type="file" name="fileUpload"></td>
+  <td>Signature</td><td><input type="file" name="fileUpload"></td></tr>
+  </table>
+</table>
+</fieldset>
+<tr><td><button onclick="submitData()">Submit</button></Td></tr>
+     </form>
+</center>
+</div>
+
+</body>
+</html>

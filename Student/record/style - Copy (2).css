@@ -1,0 +1,193 @@
+body{
+    font-family: 'Lora', serif;
+    word-spacing: 2;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    background: #dedddd;
+}
+.table{
+     width:300px;
+     height:50px;
+     background:rgba(0,0,0,0.1);
+     border-radius:1%;           
+     position:absolute;
+     transform:translate(-50%,-40%);
+     top:40%;
+     left:50%;
+     padding:30px 30px;
+     box-sizing:border-box;
+     /*-webkit-box-reflect:below 1px linear-gradient(transparent 70%, white);*/
+     background-color: white;
+    border:1px solid #BEBEBE;
+                  border-radius: 5px;
+}
+.tableData{
+     width:300px;
+     height:50px;
+     background:rgba(0,0,0,0.1);
+     border-radius:1%;           
+     position:absolute;
+     transform:translate(-50%,-40%);
+     top:40%;
+     left:50%;
+     padding:30px 30px;
+     box-sizing:border-box;
+     /*-webkit-box-reflect:below 1px linear-gradient(transparent 70%, white);*/
+     background-color: white;
+    border:1px solid #BEBEBE;
+                  border-radius: 5px;
+}
+.divData{
+     width:300px;
+     height:350px;       
+     position:absolute;
+     transform:translate(-50%,-40%);
+     top:40%;
+     left:50%;
+     padding:30px 30px;
+     box-sizing:border-box;
+     /*-webkit-box-reflect:below 1px linear-gradient(transparent 70%, white);*/
+     background-color: white;
+     border :solid 1px #BEBEBE;
+     border-radius:5px;
+                  
+
+}
+
+a{
+     outline: none;
+  color: red;
+  text-decoration: none;
+}
+a:link {
+    outline: none;
+  color: red;
+}
+
+/* visited link */
+
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+/*2871345405*/
+
+ .table .div{
+     width:300px;
+     height:600px;       
+     position:absolute;
+     transform:translate(-50%,-40%);
+     top:40%;
+     left:50%;
+     padding:30px 30px;
+     box-sizing:border-box;
+     /*-webkit-box-reflect:below 1px linear-gradient(transparent 70%, white);*/
+     background-color: white;
+     border :solid 1px #BEBEBE;
+     border-radius:5px;
+                  
+
+}
+.table .div input {  
+    font-size:large;
+    color: black;
+    margin-bottom: 20px;
+}
+.tableData .divData input {  
+    font-size:large;
+    color: black;
+    margin-bottom: 20px;
+}
+input[type="text"],input[type="password"],input[type="text"],input[type="EmailId"],input[type="number"],Select{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 4px;
+    padding: 4px;
+    background-color: white;
+    width: 100%;
+}
+.table .div input label{
+    margin: 20px;
+    padding: 0;
+    font-weight: bold;
+}
+.table .div button input{
+    margin-bottom: 20px;
+    padding: 0;
+    font-weight: bold;
+}
+.table .div input:focus {
+    outline: 0;
+    border-color: blue;
+}
+
+.table .div .face{
+    margin-bottom:22px; 
+    font-weight: bold;
+    font-size: 30px;
+    border-bottom: solid 1px blue;
+}
+.tableData .divData input label{
+    margin: 20px;
+    padding: 0;
+}
+.tableData .divData input:focus {
+    outline: 0;
+    border-color: blue;
+}
+.tableData .divData .face{
+    margin-bottom:22px; 
+    font-weight: bold;
+    font-size: 30px;
+    border-bottom: solid 1px blue;
+}
+ button{
+     transform:translate(-2%,20%);
+     font-weight: bold;
+     font-size:1.5rem;
+     border:1px solid #BEBEBE;
+     border: none;
+     color:black;
+     background-color: #11676E;
+     cursor: pointer;
+     display:block;
+     transition-duration: 0.4s;
+     width:250px;
+     height:35px;
+     border:1px solid #BEBEBE;
+                 
+              
+    }
+button:hover{
+    background-color:orange;
+}
+button:focus{
+    background-color: #11676E;
+    outline:none;
+}
+::placeholder{
+     color:gray;
+     opacity: 0.3;
+}
+ #src{
+    height: 10px;
+    width: 150rem;
+    position: relative;
+}
+#error,#error1,#error2,#error3,#error4,#error5,#error6{
+    color: red;
+    margin:-20px 2px;
+    position: absolute;
+}
+#first input:focus{
+ background-color: red;
+    outline:none;
+}

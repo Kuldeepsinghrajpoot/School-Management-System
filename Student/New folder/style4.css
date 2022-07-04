@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+*{
+	box-sizing: border-box;
+	
+	
+}
+body{
+	background: #dedddd;
+	font-family: 'Lora', serif;
+	
+	
+	
+}
+.header{
+	border:1px solid #BEBEBE;
+	border-radius: 5px;
+	background-color: yellow;
+}
+ h1{
+  color: black;
+  background-color:white;
+  border-style: none;
+  /*box-shadow: gray 0px 0px 1px 0px, gray 0px 0px 1px 0px;*/
+  font-size:30px;
+  height: auto;
+  width: 100%;
+  text-align: center;
+ font-family: 'Lora', serif;
+    word-spacing: 1;
+    background-color: white;
+    display: flex;
+    
+    
+}
+.contain{
+	border:1px solid #BEBEBE;
+	border-radius: 5px;
+	background-color: yellow;
+	border:1px solid #BEBEBE;
+	position: relative;
+	justify-content: center;
+	transform: translate(0%, 0%);
+	background-color: white;
+	border-radius: 5px;
+	/*box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);*/
+	/*box-shadow: gray 0px 0px 1px 0px, gray 0px 0px 1px 0px;*/
+	border:1px solid #BEBEBE;
+	overflow: hidden;
+	width:1020;
+    color: black;
+  background-color:white;
+  border-style: none;
+  max-width: 100%;
+}
+.form{
+	padding: 40px;
+	border:1px solid white;
+	border-radius: 5px;
+
+	
+	
+}
+#contains .contain,fieldset{
+	border:1px solid #BEBEBE;
+	border-radius: 5px;
+}
+fieldset{
+	border:2px solid #BEBEBE;
+	border-radius: 1px;
+}
+.contain label{
+	/*position: relative;*/
+	line-height: 2px
+	margin:10px;
+	
+
+}
+./*contain input{
+	position:absolute;
+}*/
+.header {
+	border-bottom: 1px solid #f0f0f0;
+	background-color: #f7f7f7;
+	padding: 20px 40px;
+	transform: translate(5%,5%);
+}
+
+.control,h1{
+	position: relative;
+}
+.form input,textarea,input[text="file"]{
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 5px;
+	width: 100%;
+}
+.form select,option,input[type="date"]{
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 8px;
+	background-color: white;
+	width: 100%;
+}
+.form input:focus {
+	outline: 0;
+	border-color: blue;
+}
+.form select:focus {
+	outline: 0;
+	border-color: blue;
+}
+.form textarea:focus {
+	outline: 0;
+	border-color: blue;
+}
+ button{
+	display: block;
+	outline: none;
+	color: black;
+	font-weight: bold;
+	font-size: large;
+	margin: 40px;
+	width: 20%;
+	height: 30px;
+	background-color: green;
+	border:none;
+	box-shadow: gray 0px 0px 1px 0px, gray 0px 0px 1px 0px;
+	transition-duration: 0.3;
+border-radius: 5px;
+}
+button:hover{
+	background-color: yellow;
+}
+#error,#error1,#error2,#error3,#error4,#error5,#error6{
+    color: red;
+    margin:-20px 2px;
+    position: absolute;
+}
+#fname::placeholder{
+	color: red;
+}
+#mname::placeholder{
+	color: red;
+}
+#Gender::placeholder{
+	color: red;
+}
+#Catagory::placeholder{
+	color: red;
+}
+#dob::placeholder{
+	color: red;
+}
+#CV::placeholder{
+	color: red;
+}
+#dist::placeholder{
+	color: red;
+}
+#dob::placeholder{
+	color: red;
+}
+#pin::placeholder{
+	color: red;
+}
+#contact::placeholder{
+	color: red;
+}
+#ParentContact::placeholder{
+	color: red;
+}
+#Email::placeholder{
+	color: red;
+}
+#Temprary::placeholder{
+	color: red;
+}
+#Permanet::placeholder{
+	color: red;
+}
+#POST::placeholder{
+	color: red;
+}

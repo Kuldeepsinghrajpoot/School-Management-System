@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+*{
+	margin: 0;
+	font-family: 'Noto Sans', sans-serif;
+	padding: 0;
+
+
+}
+body{
+	background-color: #CAC7C7;
+}
+#trdata{
+	border-bottom: 1px solid black; 
+}
+.Coloumn{
+	margin-top:7rem;
+	background-color: #F9F8F8;
+	height: 500px;
+	width: 550px;
+	margin:auto;
+    padding:20px;
+    margin-top:20px;
+    border: 1px solid #A9A8A8;
+ /* -webkit-box-shadow:   3px 3px 5px 6px white            ;   Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ 
+  -moz-box-shadow:      3px 3px 5px 6px white;  /* Firefox 3.5 - 3.6 */
+    /*box-shadow: 0px 5px 1px 0 rgba(0,0,0,0.4),1px 0px 5px 0px rgba(0,0,0,0.1);*/
+}
+.Coloumn table{
+	margin:auto;
+	margin-top:50px;
+
+}
+.Coloumn div{
+	border-bottom: 1px solid blue;
+	margin-top: -10px;
+}
+.Coloumn table td,tr{
+	padding:3px;
+	text-align: left;
+	margin-top: -10px;
+	font-size: 20px;
+}
+.Coloumn table tr, td input[type="text"]{
+	width: 150px;
+	height: 28px;
+	font-size: 20px;
+	border: 1px solid #E3E1E1;
+	padding: 0;
+	z-index: 1;
+}
+fieldset{
+	 border:1px solid #BEBEBE;
+}
+.Coloumn table tr, td  #Studentdata ,#Rolldata {
+	width: 350px;
+	padding-top: -10px;
+	height: 28px;
+	font-size: 20px;
+	border: 1px solid #E3E1E1;
+	z-index: 1;
+}
+.Coloumn .tabledata{
+	margin-top: -2px;
+}
+.Coloumn  input:focus {
+	outline: 0;
+	border-color: blue;
+
+}
+.Coloumn button{
+	border-style: none;
+	text-align: center;
+	margin-top: 30px;
+	width: 190px;
+	height: 30px;
+	background-color: blue;
+	font-family: 'Noto Sans', sans-serif;
+	border: 1px solid #E3E1E1;
+	font-size: 20px;
+	margin: 10px 170px;
+	background-color: #F9F8F8;
+	color: black;
+
+}
+

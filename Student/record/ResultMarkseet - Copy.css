@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+body{
+	font-family: 'Lora', serif;
+	}
+ #marksheetData,#tr,#td,#th{
+  border-collapse: collapse;
+  width: 550px;   
+  border:1px solid #BEBEBE;
+  text-align: center;
+}
+ #th{
+ background-color: #F9F8F8;
+ }     

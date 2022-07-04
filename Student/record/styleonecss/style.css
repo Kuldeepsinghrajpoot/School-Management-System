@@ -1,0 +1,81 @@
+
+.container{
+	position:all;
+	width: 130px;
+	height: 40px;
+	left: 0rem;
+	z-index: 1;
+		transition: 0.5s;
+
+	
+}
+.container label{
+	margin: 0 7rem;
+	height: 37px;
+	width: 70%;
+    left: 10rem;
+	background: linear-gradient(0deg, whitesmoke, rgba(0,0,0,0.1));
+	display: inline-block;
+	border-radius: 100px;
+	border: 1px solid skyblue;
+	position: 0 0 10px 1px rgba(0,0,0,0.1) inset;
+	cursor: pointer;
+		transition: 1s;
+
+
+}
+.container label::before{
+	content: "";
+	position: absolute;
+	top:  ;
+	left: ;
+	right: 4.6rem;
+	width: 2.3rem;
+	height: 2.3rem;
+	background: linear-gradient(0deg, blue, skyblue);
+	border-radius: 100px;
+	border:1px solid skybkue;
+	box-shadow: 0 0 5px 1px skybkue inset;
+	transition: 1s;
+	transition-duration: 0.1s;
+
+}
+.container label::after{
+	content: "";
+	display: inline-block;
+	height: 5px;
+	width: 5px;
+	position: absolute;
+	transition: 5s;
+	left: 24%;
+	top: 3%;
+	transition-duration: 0.5s;
+
+}
+.container input[type="checkbox"]:checked ~ label::before{
+		transition: 0.5s;
+
+	left: 78.8%; transition-duration: 0.3s;
+
+
+}
+.container input[type="checkbox"]:checked ~ label::after{
+	 right: 0%;
+	 	transition: 0.5s
+}
+
+.container input[type="checkbox"]{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,77 @@
+body{
+	font-family: 'Lora', serif;
+	word-spacing: 2;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	
+}
+
+.table{
+	 width:300px;
+	 height:400px;
+	 background:rgba(0,0,0,0.1);
+	 border-radius:1%;
+	 
+	 position:absolute;
+	 transform:translate(-50%,-40%);
+	 top:40%;
+	 left:50%;
+	 padding:30px 30px;
+	 box-sizing:border-box;
+	 /*-webkit-box-reflect:below 1px linear-gradient(transparent 70%, white);*/
+	 	background-color: white;
+				box-shadow: rgba(0,0,0,0.1) 1px 1px  1px 1px, rgba(0,0,0,0.190)0px 0px 1px 1px;
+				  border-radius: 5px;
+
+}
+input{	
+	font-size: large;
+	color: black;
+}
+input[type="text"],input[type="password"],input[type="text"],input[type="EmailId"],input[type="number"] {
+	border:none;
+	 background:transparent;
+	 outline:none;
+	 height:25px;
+	 border-bottom:1px solid orange;
+	 color:blue;
+	 transition-duration: 0.4s;
+}
+
+.face{
+	position: absolute;
+	transform: translate(100%,-100%);
+
+}
+
+ button{
+ 	 transform:translate(-10.1%,45%);
+	 font-weight: bold;
+	 font-size:1.5rem;
+   
+	 border: none;
+	 color:black;
+	 background-color: #11676E;
+	 cursor: pointer;
+	 display:block;
+	
+	transition-duration: 0.4s;
+	 width:301px;
+	 height:35px;
+	
+	box-shadow: rgba(0,0,0,0.1) 1px 1px  1px 1px, rgba(0,0,0,0.190)0px 0px 1px 1px;
+			  
+     border-bottom-right-radius:5px;
+	 border-bottom-left-radius:5px;
+}
+button:hover{
+	background-color:orange;
+}
+button:focus{
+	background-color: #11676E;
+	outline:none;
+}
+::placeholder{
+	 color:black
+}

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+body{
+  font-family: 'Lora', serif;
+}.Center{
+     font-family: 'Lora', serif;
+     height: 600px;
+     width: 60rem;
+     background-color: white;
+     position:absolute;
+     transform:translate(-50%, 0%);
+     top: 5%;
+     left:50%;
+     padding:30px 30px;
+     box-sizing:border-box;
+     border:1px solid black;
+}
+.Center .top{
+     width: 59.9rem;
+     height: 17px; 
+     position:relative;
+     box-sizing: content-box;
+     stop-color: white;
+     transform:translate(-50%, -50%);
+     background: white;
+     top: 0%;
+     left:50%;
+     padding:30px 25px;
+     box-shadow: rgba(0,0,0,0.1) 0px 5px 5px;
+     box-sizing:border-box;
+}
+.Center .div1{
+   box-sizing:border-box;
+   border-radius: 5px;
+   transform:translate(-14.5%,2.8%);
+   box-shadow: rgba(100,100,100,0.1) 0px 0px 0px , rgba(0,0,0,0.1)0px 0px 4px;
+   height: 537px;
+   width: 10rem;
+   border-right:1px solid #BEBEBE;
+   position: relative;
+   background: #F5F3F4;
+   display: block;
+   border-radius:0.1px; 
+ 
+}
+.Center .div2 li,ol a {
+  list-style-type: none;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  height: 35px;
+width: 206px;
+  margin: 0px 0px;
+  background-color: navy;
+  border-bottom: 1px solid  blue;
+  background-image: linear-gradient(0deg,navy,blue);
+}
+.Center .div2 li,ol a:hover{
+color: black;
+height: 35px;
+width: 206px;
+margin: 0 0;
+background-color:red;
+cursor:pointer; 
+background-image: linear-gradient(0deg,skyblue,blue);
+font-family: 'Lora', serif;
+z-index:-1;
+    }
+.Center #Data{
+  transform : translate(0%,0%);
+  width     : 100%;
+} #butt{
+  font-size: large;
+  color:blue;
+  height:30px;
+  width: 99%;
+  transform: translate(-12.4%,0%);
+   box-sizing:border-box;
+  border-style: none;
+  background-color: #F5F3F4;
+  cursor:pointer; 
+  list-style-type: none;
+  text-decoration: none;
+  display: block;
+  position: inherit;
+  font-family: 'Lora', serif;
+  z-index: 1;
+}
+
+
+.AddressUI{
+  border: 1px solid blue;
+}
+
+
+#lougout{
+  height: 40px;
+  width: 40px;
+  outline: none;
+  border-style: none;
+  display: block;
+}
